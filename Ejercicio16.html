@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16 - Horario</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Horario Escolar</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:00 - 9:00</td>
+                <td rowspan="2">Matemáticas</td>
+                <td>Inglés</td>
+                <td rowspan="2">Física</td>
+                <td>Historia</td>
+                <td rowspan="3">Educación Física</td>
+            </tr>
+            <tr>
+                <td>9:00 - 10:00</td>
+                <td>Biología</td>
+                <td>Historia</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:00</td>
+                <td>Arte</td>
+                <td rowspan="2">Química</td>
+                <td rowspan="2">Inglés</td>
+                <td>Geografía</td>
+            </tr>
+            <tr>
+                <td>11:00 - 12:00</td>
+                <td>Arte</td>
+                <td>Historia</td>
+                <td>Matemáticas</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

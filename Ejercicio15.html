@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15 - Su pedido</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        th {
+            background-color: lightgray;
+        }
+
+        tfoot td {
+            font-weight: bold;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Su pedido</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre producto</th>
+                <th>Precio unitario</th>
+                <th>Unidades</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Reproductor MP3 (8 GB)</td>
+                <td>49.00</td>
+                <td>2</td>
+                <td>98.00</td>
+            </tr>
+            <tr>
+                <td>Tóner de colores</td>
+                <td>12.50</td>
+                <td>5</td>
+                <td>62.50</td>
+            </tr>
+            <tr>
+                <td>Reproductor de radio de contacto remoto</td>
+                <td>129.99</td>
+                <td>1</td>
+                <td>129.99</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">TOTAL</td>
+                <td>207.51</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
