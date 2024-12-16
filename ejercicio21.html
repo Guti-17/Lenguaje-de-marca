@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 21 - Miniaturas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #bde9ff;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .imagen {
+            display: inline-block;
+            border-radius: 5px;
+            padding: 5px;
+            text-align: center;
+            width: 300px;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .imagen img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .imagen:hover {
+            transform: scale(1.10);
+            box-shadow: 0 8px 12px #1c68ff;
+        }
+
+        .imagen a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .imagen a:hover {
+            color: #1c68ff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Ejercicio 21 - Miniaturas</h1>
+
+    <div class="contenedor">
+
+        <div class="imagen">
+            <a href="https://www.w3schools.com/html/img_chania.jpg" target="_blank">
+                <img src="https://www.w3schools.com/html/img_chania.jpg" alt="Calle">
+                <span>Chania, Creta</span>
+            </a>
+        </div>
+
+        <div class="imagen">
+            <a href="https://www.w3schools.com/html/img_girl.jpg" target="_blank">
+                <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Persona">
+                <span>Chica con chaqueta</span>
+            </a>
+        </div>
+
+        <div class="imagen">
+            <a href="https://www.w3schools.com/html/pic_trulli.jpg" target="_blank">
+                <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Casa">
+                <span>Trulli italiano</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

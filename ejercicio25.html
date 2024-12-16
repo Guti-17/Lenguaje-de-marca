@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rellena tu CV</title>
+    <style>
+        form {
+            border: 1px solid #7d7d7d;
+            padding: 20px;
+            border-radius: 5px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Rellena tu CV</h1>
+
+    <form>
+        <p>Datos personales</p>
+
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+
+        <label for="apellidos">Apellidos</label><br>
+        <input type="text" id="apellidos" name="apellidos" style="width: 300px;"><br>
+
+        <label for="contraseña">Contraseña:</label><br>
+        <input type="password" id="contraseña" name="contraseña"><br>
+
+        <label for="dni">DNI</label><br>
+        <input type="text" id="dni" name="dni" style="width: 80px;"><br>
+
+        <label for="sexo">Sexo</label><br>
+        <input type="radio" id="hombre" name="sexo" value="hombre" checked>
+        <label for="hombre">Hombre</label><br>
+        <input type="radio" id="mujer" name="sexo" value="mujer">
+        <label for="mujer">Mujer</label><br><br>
+
+        <label for="foto">Incluir mi foto</label>
+        <input type="file" id="foto" name="foto"><br><br>
+
+        <label for="provincia">Provincia</label><br>
+        <select id="provincia" name="provincia">
+            <option value="" disabled selected>Seleccionar</option>
+            <option value="almeria">Almería</option>
+            <option value="cadiz">Cádiz</option>
+            <option value="cordoba">Córdoba</option>
+            <option value="granada">Granada</option>
+            <option value="huelva">Huelva</option>
+            <option value="jaen">Jaén</option>
+            <option value="malaga">Málaga</option>
+            <option value="sevilla">Sevilla</option>
+        </select><br><br>
+
+        <label for="fecha_nacimiento">Fecha de nacimiento</label><br>
+        <input type="number" id="dia" name="dia" placeholder="Día" min="1" max="31" style="width: 50px; display: inline-block;">
+        <span>de</span>
+        <select id="mes" name="mes" style="width: 100px; display: inline-block;">
+            <option value="enero">Enero</option>
+            <option value="febrero">Febrero</option>
+            <option value="marzo">Marzo</option>
+            <option value="abril">Abril</option>
+            <option value="mayo">Mayo</option>
+            <option value="junio">Junio</option>
+            <option value="julio">Julio</option>
+            <option value="agosto">Agosto</option>
+            <option value="septiembre">Septiembre</option>
+            <option value="octubre">Octubre</option>
+            <option value="noviembre">Noviembre</option>
+            <option value="diciembre">Diciembre</option>
+        </select>
+        <span>de</span>
+        <input type="number" id="anio" name="anio" placeholder="Año" min="1900" max="2100" style="width: 70px; display: inline-block;"><br><br>
+
+        <label for="temas_intereses">Temas de interés</label><br>
+        <select id="temas_intereses" name="temas_intereses" multiple size="6">
+            <option value="tecnologia">Administración de bases de datos</option>
+            <option value="musica">Análisis y programación</option>
+            <option value="viajes">Arquitectura</option>
+            <option value="arte">Calidad</option>
+            <option value="ciencia">ERP, CRM, Business Intelligence</option>
+        </select><br><br>
+
+        <input type="checkbox" id="boletin" name="boletin" value="true" checked>
+        <label for="boletin">Suscribirme al boletín de novedades</label><br><br>
+
+        <input type="submit" value="Guardar cambios">
+        <input type="reset" value="Borrar los datos introducidos">
+    </form>
+
+</body>
+
+</html>

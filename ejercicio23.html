@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio iframe</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 0 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #0056b3;
+        }
+
+        iframe {
+            height: 600px;
+            width: 90%;
+            max-width: 800px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="https://www.uniwebsidad.com/html" target="contenido">HTML</a>
+        <a href="https://www.uniwebsidad.com/css" target="contenido">CSS</a>
+        <a href="https://www.uniwebsidad.com/javascript" target="contenido">JavaScript</a>
+        <a href="https://www.uniwebsidad.com/ajax" target="contenido">Ajax</a>
+    </div>
+
+    <iframe src="https://www.ieslamarisma.net" title="Ejemplo de Iframe" name="contenido"></iframe>
+
+</body>
+
+</html>
